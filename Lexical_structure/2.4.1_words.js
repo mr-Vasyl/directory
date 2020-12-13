@@ -7,5 +7,6 @@ case  delete   for      instanceof static try
 catch do       from     let        super  typeof
 class else     function new        switch var
 
-enum imp l ements inter face pac kage private protected public arguments eval
+enum imp l ements inter face pac kage private protected
+public arguments eval
 */
