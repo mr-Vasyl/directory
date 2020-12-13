@@ -38,3 +38,9 @@ zero === negz // => true: zero and negative zero are equal
 1/zero === 1/negz // => false: Infinity and -Infinity are not equal
 
 console.log(BigInt()) // сделать возможным представление 64-битных целых чисел
+
+let timestamp = Date.now(); // Текущее время как отметка времени (число ).
+let now = new Date(); // Tекущее время как объект Date.
+let ms = now.getTime(); // Преобразовать в миллисекундную отметку времени
+let iso = now.toISOString(); // Преобразовать в строку со стандартным форматом
+console.log(timestamp,now,ms,iso);
