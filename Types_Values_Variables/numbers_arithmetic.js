@@ -28,3 +28,13 @@ Math.trunc(3.9) // => 3: преобразует в целое число, отб
 Math.fround(x) // Округляет до ближайшего 32-битного числа с плавающей точкой
 Math.sinh(x) // Гиперболический синус . також Math.cosh(), Math.tanh()
 Math.asinh(x) // Гиперболический арксинус . Also Math.acosh(), Math.atanh()
+
+infinity // Положительное число , слишком большое для представления
+console.log(Number.isNaN(4)) // чи значення являється NaN
+
+let zero = 0; // Regular zero
+let negz = -0; // Negative zero
+zero === negz // => true: zero and negative zero are equal
+1/zero === 1/negz // => false: Infinity and -Infinity are not equal
+
+console.log(BigInt()) // сделать возможным представление 64-битных целых чисел
