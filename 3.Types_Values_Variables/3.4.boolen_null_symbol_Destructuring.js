@@ -62,3 +62,5 @@ let {r, g, b} = transparent; // r == 0.0; g == 0.0; b == 0.0
 // Same as const sin=Math.sin, cos=Math.cos, tan=Math.tan
 const {sin, cos, tan} = Math;
 
+let а1 = { b:"gg" } ;
+console.log(a1.b)
