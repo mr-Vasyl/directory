@@ -59,3 +59,5 @@ s[s.length - 1]; // => "d"
 let name = 'Bill';
 let greeting = `Hello ${name}.`; // greeting == "Hello Bill."
 console.log(greeting);
+
+
