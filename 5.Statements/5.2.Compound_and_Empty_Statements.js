@@ -81,4 +81,29 @@ console.log(sum);
 for (let [key, val] of Object.entries(obj)) {
 	console.log(key,val);
 }
+// з строками
+let str = {};
+for(let leteer of "miiss") {
+	if(str[leteer]) {
+		str[leteer]++;
+	} else {
+		str[leteer] = 1;
+	}
+}
+console.log(str)
 
+//Set
+let text = "Na na Batman"
+let wordsSet = new Set(text.split(' '));
+console.log(wordsSet)
+let wordsArray = [];
+for(let word of wordsSet) {
+	wordsArray.push(word)
+}
+console.log(wordsArray)
+
+// for in обект в масив
+let o = {x:1, b:3};
+let a = [], i=0;
+for(a[i++] in o){};
+console.log(a) // [x,b]
