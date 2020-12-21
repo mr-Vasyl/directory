@@ -40,5 +40,10 @@ function factorial (x) {
     }
     return g;
 }
-console.log(factorial(4))
 
+//try catch
+try {
+factorial(-1);
+} catch(e) {
+    console.log(e);
+}
