@@ -41,7 +41,24 @@ for (let a in arr) {
 	console.log(a);
 }
 // проверка щоб не наслідувати методи
-for(let a in arr) {
-    if(typeof arr[a] === "function") continue; // пропускаэ
+for (let a in arr) {
+	if (typeof arr[a] === 'function') continue; // пропускаэ
 }
 
+// копія свойчтв
+let target = { x: 1 },
+	source = { y: 2, z: 3 };
+for (let key of Object.keys(source)) {
+	target[key] = source[key];
+}
+console.log(target);
+
+let copy = Object.assign(target, source);
+console.log(copy);
+
+// серіалізація обєктів 
+let objJeson = { x: 2, array: [ 1, 2, 3, 4, 5 ], z: { a: 3, b: 4 } };
+let s = JSON.stringify(objJeson);
+let k = JSON.parse(s);
+console.log({ s: s, k: k });
+console.log([ typeof s, typeof k ]);
