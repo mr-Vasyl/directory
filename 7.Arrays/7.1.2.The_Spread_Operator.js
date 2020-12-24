@@ -51,4 +51,3 @@ for (let i = letters.length - 1; i >= 0; i--) {
 	revers += letters[i];
 }
 console.log(revers); //dlrow olleh
-
