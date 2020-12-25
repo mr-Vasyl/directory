@@ -137,3 +137,4 @@ let any = { 0: 'a', 1: 'b', length: 2 };
 console.log(Array.prototype.join.call(any, '+')); // a+b
 console.log(Array.prototype.slice.call(any, 0)); // [ 'a', 'b' ]
 
+
