@@ -68,3 +68,4 @@ let benchmark = (n) => {
 	return sum;
 };
 console.log(timed(benchmark)(100)); // 5050
+
