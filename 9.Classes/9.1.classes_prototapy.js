@@ -76,3 +76,24 @@ let r3 = new Range3(1, 3);
 console.log(r3.includes(2)); // true 2 входить в діапазон
 console.log(r3.toString()); // (1...3)
 console.log([ ...r3 ]); // [1,2,3] через ітератор в масив
+
+// подкласси
+function Span(start, span) {
+	if (span >= 0) {
+		this.from = start;
+		this.to = start + span;
+	} else {
+		this.to = start;
+		this.from = start + span;
+	}
+}
+
+// наслідуємось
+Span.prototype = Object.create(Range.prototype);
+Span.prototype.constructor = Span;
+Span.prototype.toString = function() {
+	return `(${this.from}...+${this.to - this.from})`;
+};
+
+let s = new Span(2, 5);
+console.log(s.toString()); // 2...+5
