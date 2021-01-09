@@ -41,3 +41,13 @@ let error = new HTTPError(404, 'Not Found', 'http://example.com/');
 console.log(error.status); // => 404
 console.log(error.message); // => "404 Not Found: http://example.com/"
 console.log(error.name); // => "HTTPError"
+
+let o = { s: '', n: 0, a: [ true, false, null ] };
+let js = JSON.stringify(o); // {"s":"","n":0,"a":[true,false,null]}
+let copy = JSON.parse(js); // { s: '', n: 0, a: [ true, false, null ] }
+console.log(js, copy);
+
+let eur = Intl.NumberFormat('es', { style: 'currency', currency: 'EUR' });
+console.log(eur.format(10)); // € 10.00
+
+
