@@ -137,3 +137,4 @@ function* sens(...iterables) {
 	}
 }
 console.log([ ...sens([ 12, 34, 455 ], 'hgdf') ]);
+

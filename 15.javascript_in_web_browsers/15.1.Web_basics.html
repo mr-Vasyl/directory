@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Clock</title>
+        <style>
+            #clock {
+                font: bold 24px sans-serif;
+                background: #ddf;
+                padding: 15px;
+                border: solid black 2px;
+                border-radius: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Clock</h1>
+        <span id=clock></span>
+        <script>
+            function dispalyTime() {
+                let clock = document.querySelector("#clock");
+                let time = new Date();
+                clock.textContent = time.toLocaleTimeString()
+            }
+            dispalyTime()
+            setInterval(dispalyTime, 1000)
+        </script>
+    </body>
+</html>
